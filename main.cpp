@@ -4,32 +4,45 @@
 
 using namespace std;
 
+//template<typename T>
+//class Data
+//{
+//public:
+//	T InnerData;
+//};
+
+class FVector2D
+{
+public:
+	FVector2D(int InX = 0, int InY = 0) : X(InX), Y(InY)
+	{
+
+	}
+	int X;
+	int Y;
+
+	//oprator overloading
+	FVector2D operator+(FVector2D RightHandSide)
+	{
+		FVector2D New;
+		New.X = X + RightHandSide.X;
+		New.Y = Y + RightHandSide.Y;
+
+		return New;
+	}
+};
+
 
 
 int main()
 {
-	vector<int> IntDArray;
+	FVector2D First(0, 0);
+	FVector2D Second(2, 2);
 
-	DynamicArray OurArray;
+	FVector2D Three(First + Second);
 
-	OurArray.PushBack(1);
-	OurArray.PushBack(2);
-	OurArray.PushBack(3);
-	OurArray.PushBack(4);
+	Three = First + Second;
 
-	cout << OurArray.GetSize() << endl;
-	cout << OurArray.GetCapacity() << endl;
-	OurArray.Pop(2);
-
-	for (int i = 0; i < OurArray.GetSize(); i++)
-	{
-		cout << OurArray[i] << " ";
-	}
-
-	OurArray.PushBack(6);
-	for (int i = 0; i < OurArray.GetSize(); i++)
-	{
-		cout << OurArray[i] << " ";
-	}
-
+	First + Second;
+	// = First.operator+(Second); 위에 거랑 같음
 }
