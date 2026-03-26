@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Work\\P_2026_03_25\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\String.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:String.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\DynamicArray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:DynamicArray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\DynamicArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:DynamicArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|C:\\Work\\P_2026_03_25\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{29A4AA15-69FD-41A4-8215-F50F813E94CF}|P_2026_03_25.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +26,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-25T00:17:06.087Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "String.h",
+              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\String.h",
+              "RelativeDocumentMoniker": "String.h",
+              "ToolTip": "C:\\Work\\P_2026_03_25\\String.h",
+              "RelativeToolTip": "String.h",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAqwGIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-25T07:20:01.737Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DynamicArray.cpp",
               "DocumentMoniker": "C:\\Work\\P_2026_03_25\\DynamicArray.cpp",
               "RelativeDocumentMoniker": "DynamicArray.cpp",
@@ -34,34 +66,19 @@
               "RelativeToolTip": "DynamicArray.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-25T01:01:19.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T01:01:19.386Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DynamicArray.h",
               "DocumentMoniker": "C:\\Work\\P_2026_03_25\\DynamicArray.h",
               "RelativeDocumentMoniker": "DynamicArray.h",
               "ToolTip": "C:\\Work\\P_2026_03_25\\DynamicArray.h",
               "RelativeToolTip": "DynamicArray.h",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJ0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAIUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-25T01:01:15.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Work\\P_2026_03_25\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Work\\P_2026_03_25\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-25T00:17:06.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T01:01:15.565Z"
             }
           ]
         }
