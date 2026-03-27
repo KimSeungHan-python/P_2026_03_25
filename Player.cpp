@@ -6,6 +6,7 @@ APlayer::APlayer()
 	X = 1;
 	Y = 1;
 	Mesh = 'P';
+	ZOrder = 10;
 }
 
 APlayer::~APlayer()
@@ -31,6 +32,14 @@ void APlayer::Tick()
 	if (UEngine::KeyCode == 's')
 	{
 		Y++;
+	}
+	if (UEngine::KeyCode == 'a')
+	{
+		X--;
+	}
+	if (UEngine::KeyCode == 'd')
+	{
+		X++;
 	}
 }
 

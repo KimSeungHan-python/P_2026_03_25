@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <Windows.h>
 
 
 class UMap;
@@ -32,6 +33,18 @@ public:
 	//void LoadMap();
 
 	static int KeyCode;
+
+	//Renderer
+	HANDLE ScreenBufferHandle[2];// ¹öÆÛ 2°³ ¾¸
+	int ActiveScreenBufferIndex = 0;
+
+	void InitBuffer();
+	void Clear();
+	void Draw(int InX, int InY, char InMesh);
+	void Flip();
+	void TermBuffer();
+
+
 protected:
 	UEngine();
 

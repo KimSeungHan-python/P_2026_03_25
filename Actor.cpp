@@ -1,6 +1,7 @@
 #include "Actor.h"
 #include <Windows.h>
 #include <iostream>
+#include "Engine.h"
 
 AActor::AActor()
 {
@@ -32,11 +33,12 @@ void AActor::Tick()
 }
 void AActor::Render()
 {
-	COORD pos = { X,Y }; //x, y 좌표 설정
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos); //커서 설정
-	
-	std::cout << Mesh;
-	
+	//COORD pos = { X,Y }; //x, y 좌표 설정
+	//SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos); //커서 설정
+	//
+	//std::cout << Mesh;
+
+	GEngine->Draw(X,Y,Mesh);
 }
 void AActor::SetActorLocation(int InX, int InY)
 {

@@ -36,6 +36,8 @@ public:
 		return Actors;
 	}
 
+	void Sort();
+
 protected:
 	vector<class AActor*> Actors;
 };

@@ -7,6 +7,7 @@
 #include "Goal.h"
 #include "Floor.h"
 #include "Player.h"
+#include "Engine.h"
 
 
 UMap::UMap()
@@ -33,10 +34,14 @@ void UMap::Tick()
 }
 void UMap::Render()
 {
+	GEngine->Clear();
+
 	for (auto actor : Actors)
 	{
 		actor->Render();
 	}
+	
+	GEngine->Flip();
 }
 
 void UMap::Load(string s)
@@ -53,32 +58,52 @@ void UMap::Load(string s)
 			{
 				if (line[i] == 'P')
 				{
+					SpawnActors<AFloor>()->SetActorLocation(i, YlineCount);
 					SpawnActors<APlayer>()->SetActorLocation(i, YlineCount);
 				}
 				else if (line[i] == 'M')
 				{
+					SpawnActors<AFloor>()->SetActorLocation(i, YlineCount);
 					SpawnActors<AMonster>()->SetActorLocation(i, YlineCount);
 
 				}
 				else if (line[i] == 'G')
 				{
+					SpawnActors<AFloor>()->SetActorLocation(i, YlineCount);
 					SpawnActors<AGoal>()->SetActorLocation(i, YlineCount);
 
 				}
 				else if (line[i] == '#')
 				{
+					SpawnActors<AFloor>()->SetActorLocation(i, YlineCount);
 					SpawnActors<AWall>()->SetActorLocation(i, YlineCount);
 
 				}
 				else
 				{
 					SpawnActors<AFloor>()->SetActorLocation(i, YlineCount);
-
 				}
 			}
 		
 		}
 		file.close();
+	}
+	Sort();
+}
+
+void UMap::Sort()
+{
+	for (int FirstIndex = 0; FirstIndex < Actors.size(); FirstIndex++)
+	{
+		for (int SecondIndex = 0; SecondIndex < Actors.size(); SecondIndex++)
+		{
+			if (Actors[FirstIndex]->ZOrder < Actors[SecondIndex]->ZOrder)
+			{
+				auto Temp = Actors[FirstIndex];
+				Actors[FirstIndex] = Actors[SecondIndex];
+				Actors[SecondIndex] = Temp;
+			}
+		}
 	}
 }
 

@@ -10,10 +10,13 @@ public:
 	virtual void Tick();
 	virtual void Render();
 	virtual void SetActorLocation(int InX, int InY);
+	
+	int ZOrder = 0;
 
 protected:
 	int X;
 	int Y;
+
 	char Mesh;
 };
 
