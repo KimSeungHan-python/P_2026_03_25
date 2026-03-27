@@ -9,12 +9,12 @@ public:
 	String()
 		: Char(nullptr), Length(0)
 	{
-		Char = new char[9999]; //9999자리까지 받을 수 있음
+		Char = new char[20000]; //9999자리까지 받을 수 있음
 	}
 
 	String(const char* c)
 	{
-		Char = new char[9999];
+		Char = new char[20000];
 		for (int i = 0; c[i] != '\0'; i++)
 		{
 			Char[i] = c[i];
@@ -41,7 +41,7 @@ public:
 		Length = 0;
 	}
 
-	void pushback(const char* c) // 끝
+	void pushback(const char* c) // 끝<--const없으면 C++11부터딴에서 막음
 	{
 		int count = 0;
 		for (int i = 0; c[i] != '\0'; i++)
